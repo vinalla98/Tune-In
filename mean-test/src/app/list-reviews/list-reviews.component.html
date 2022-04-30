@@ -1,0 +1,15 @@
+<div>
+    <ul *ngFor ="let review of rev let i = index">
+        <li>{{review.firstName}}
+            <td>
+            <label for="review"><b>Review : </b></label>
+            </td>
+            <!-- <input matInput id="review" class = "feedbackForm" type="review" placeholder= {{review.review}} formControlName="review" required> -->
+     <td>
+            <textarea class="feedbackForm" matInput id="review" type="review" rows=3 value={{review.review}} disabled></textarea> 
+            <button mat-button color="warn" (click)="onDelete(review._id)">DELETE</button>
+            <button mat-button color="accent" [routerLink]="['/editReview', review._id]">UPDATE</button>
+        </td>
+        </li>
+    </ul>
+</div>
