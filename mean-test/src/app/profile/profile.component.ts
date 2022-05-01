@@ -27,7 +27,6 @@ export class ProfileComponent implements OnInit {
       );
   }
   onDelete(userId: string) {
-    alert("happy birthday vinni");
     this._myService.deleteUser(userId);
     
     this.router.navigate(['/']);

@@ -11,7 +11,6 @@ import { Location } from '@angular/common';
 })
 export class AppComponent {
   title = 'IT6203';
-  formName = 'Project Proposal Form';
   condition = false;
   display_profile_block = 'display: block;';
 
