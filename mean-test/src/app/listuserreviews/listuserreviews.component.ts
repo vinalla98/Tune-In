@@ -7,11 +7,12 @@ import {Router} from '@angular/router';
 import {ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
-  selector: 'app-list-reviews',
-  templateUrl: './list-reviews.component.html',
-  styleUrls: ['./list-reviews.component.css']
+  selector: 'app-listuserreviews',
+  templateUrl: './listuserreviews.component.html',
+  styleUrls: ['./listuserreviews.component.css']
 })
-export class ListReviewsComponent implements OnInit {
+export class ListuserreviewsComponent implements OnInit {
+
   @Input() firstName: string = "";
   @Input() rate: string = "";
   @Input() review:  string = "";

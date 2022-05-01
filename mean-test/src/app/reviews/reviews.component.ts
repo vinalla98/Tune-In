@@ -18,10 +18,13 @@ export class ReviewsComponent implements OnInit {
   @Input() review:  string = "";
   public mode = 'Add'; 
   private id: any;
-  private rev: any;
+  public rev: any;
+  public users: any;
   constructor(private _myService: UsersService, private router:Router, public route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.getReviews();
+    this.getUsers();
     this.route.paramMap.subscribe((paramMap: ParamMap ) => {
         if (paramMap.has('_id')){
             this.mode = 'Edit'; 
@@ -57,7 +60,29 @@ onSubmit() {
   if (this.mode == 'Edit')
   this._myService.updateReview(this.id,this.firstName ,this.rate, this.review);
   //this.router.navigate(['/listUsers']);
-  this.router.navigate(['/Open']);
+  this.router.navigate(['/listReviews'])
+  .then(() => {
+    window.location.reload();
+  });
+}
+
+getReviews() {
+  this._myService.getReviews().subscribe(
+      data => { this.rev = data},
+      err => console.error(err),
+      () => console.log('finished loading')
+  );
+}
+onDelete(reviewId: string) {
+this._myService.deleteReview(reviewId);
+}
+
+getUsers() {
+  this._myService.getUsers().subscribe(
+      data => { this.users = data},
+      err => console.error(err),
+      () => console.log('finished loading')
+  );
 }
 
 loginForm = new FormGroup(

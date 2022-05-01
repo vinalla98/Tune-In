@@ -60,7 +60,11 @@ export class UsereditComponent implements OnInit {
     if (this.mode == 'Edit')
     this._myService.updateUser(this.id,this.firstName ,this.lastName, this.email, this.phoneNumber);
     //this.router.navigate(['/listUsers']);
-    this.router.navigate(['/Open']);
+    this.router.navigate(['/Open'])
+    .then(() => {
+      window.location.reload();
+    });
+
   }
   
   loginForm = new FormGroup(

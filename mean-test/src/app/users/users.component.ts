@@ -23,10 +23,29 @@ export class UsersComponent implements OnInit {
   private id: any;
   private user: any;
   public error_message = "";
-
+  loginUsername = "";
+  loginPassword = "";
   public username: string = '';
-  
+  public adminLoginUsername = "admin@gmail.com";
+  public adminLoginPassword = "admin@1234"
+
   constructor(private _myService: UsersService, private router:Router, public route: ActivatedRoute) { }
+
+ 
+
+  setUserName (userName : string): void {
+    // console.log('setNewUserName', userName)
+    this.loginUsername = userName
+    console.log(this.loginUsername)
+
+}
+
+setPassword (password : string): void {
+  // console.log('setNewUserName', userName)
+  this.loginPassword = password
+  console.log(this.loginPassword)
+
+}
 
   ngOnInit() {
     this.route.paramMap.subscribe((paramMap: ParamMap ) => {
@@ -59,6 +78,19 @@ registrationForm = new FormGroup(
   email: new FormControl('', Validators.required),
   phoneNumber: new FormControl('', Validators.required),
 });
+loginBtnClick () 
+{
+  // const loginUse = (<HTMLInputElement>document.getElementById("userName")).value;
+  if(this.loginUsername == this.adminLoginUsername && this.loginPassword == this.adminLoginPassword)
+  {
+    // console.log(loginUse);
+     this.router.navigate(['/adminPage'])
+     .then(() => {
+      window.location.reload();
+    });
+  }
+};
+
 onSubmit() {
   console.log("You submitted: " + this.firstName + " " + this.lastName);
   this.error_message = '';
@@ -72,7 +104,10 @@ onSubmit() {
       if (this.mode == 'Edit')
         this._myService.updateUser(this.id,this.firstName ,this.lastName, this.email, this.phoneNumber);
       
-      this.router.navigate(['/Open']);
+      this.router.navigate(['/Open'])
+      .then(() => {
+        window.location.reload();
+      });
     }
     else
         this.error_message = "Please give all details to access Tune-In";

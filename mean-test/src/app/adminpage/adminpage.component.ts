@@ -1,4 +1,3 @@
-import {AfterViewInit, ViewChild, ElementRef } from "@angular/core";
 import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
@@ -9,14 +8,23 @@ import {ActivatedRoute, ParamMap } from '@angular/router';
 
 
 @Component({
-  selector: 'app-googlemapsapi',
-  templateUrl: './googlemapsapi.component.html',
-  styleUrls: ['./googlemapsapi.component.css']
+  selector: 'app-adminpage',
+  templateUrl: './adminpage.component.html',
+  styleUrls: ['./adminpage.component.css']
 })
-export class GooglemapsapiComponent implements OnInit {
+export class AdminpageComponent implements OnInit {
 
-  constructor(private _myService: UsersService, private router:Router, public route: ActivatedRoute) { }
+  constructor(private router:Router) { }
+
   ngOnInit(): void {
+  }
+  navigateUrl(url : any)
+  {
+    
+    this.router.navigate([url])
+    .then(() => {
+      window.location.reload();
+    });
   }
 
 }

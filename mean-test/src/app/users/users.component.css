@@ -46,21 +46,20 @@ body{
   }
   .logoImage {
     width: 14%;
-    margin-left: 52%;
+    margin-left: 49%;
     margin-top: 4%;
   }
   
   .registrationForm{
     float: right;
-  margin-left: 20%;
   }
   
   .registrationFormLabel{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  box-sizing: border-box;
+    width: 146%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
   }
   
   .registrationLogoImage{
@@ -73,8 +72,7 @@ body{
   color: white;
   text-decoration: solid;
   padding: 16px 22px;
-  margin: 8px 0;
-  width: 35%;
+  margin: 8px 0px 26px 130px;
   }
   
   .song{

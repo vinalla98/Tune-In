@@ -15,24 +15,22 @@
 
 <div class="content">
     <div style="padding: 5%; background-color: blueviolet;">
-        <button onclick="document.getElementById('top_artists').style.display = 'block';">Top 10 Artists</button>
+        <button onclick="document.getElementById('top_artists').style.display = 'block'; document.getElementById('top_bands').style.display = 'none'; document.getElementById('top_songCovers').style.display = 'none';">Top 10 Artists</button>
+        <button onclick="document.getElementById('top_bands').style.display = 'block'; document.getElementById('top_artists').style.display = 'none'; document.getElementById('top_songCovers').style.display = 'none';">Top 10 Bands</button>
+        <button onclick="document.getElementById('top_songCovers').style.display = 'block';document.getElementById('top_artists').style.display = 'none'; document.getElementById('top_bands').style.display = 'none';">Top 10 Song Covers</button>
+
     </div>
     <div id="top_artists" class="topArtists" style="display: none;">
-        <td>
+        
+        <div>
         <img src="../assets/images/Artists/Ariana_Grande.jpg" width="100px" height="100px"/>
-        </td>
+        <!-- <span>Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</span> -->
+        </div>
         <img src="../assets/images/Artists/Bad_Bunny.jpg" width="100px" height="100px" />
         <img src="../assets/images/Artists/Drake.jpg" width="100px" height="100px"/>
         <img src="../assets/images/Artists/Ed_Sheeran.jpg" width="100px" height="100px" />
         <img src="../assets/images/Artists/Justin_Bieber.jpg" width="100px" height="100px"/>
         <img src="../assets/images/Artists/Taylor_Swift.jpg" width="100px" height="100px"/>
-    </div>
-    <!-- <img src="../assets/images/homeimage.png" width="100%" alt="Welcome Banner"/> -->
-</div>
-
-<div class="content">
-    <div style="padding: 5%; background-color: blueviolet;">
-        <button onclick="document.getElementById('top_bands').style.display = 'block';">Top 10 Bands</button>
     </div>
     <div id="top_bands" class="topBands" style="display: none;">
         <td>
@@ -41,17 +39,10 @@
         <img src="../assets/images/Artists/Bad_Bunny.jpg" width="100px" height="100px" />
         <img src="../assets/images/Artists/Drake.jpg" width="100px" height="100px"/>
         <img src="../assets/images/Artists/Ed_Sheeran.jpg" width="100px" height="100px" />
-        <img src="../assets/images/Artists/Justin_Bieber.jpg" width="100px" height="100px"/>
-        <img src="../assets/images/Artists/Taylor_Swift.jpg" width="100px" height="100px"/>
+        <!-- <img src="../assets/images/Artists/Justin_Bieber.jpg" width="100px" height="100px"/> -->
+        <!-- <img src="../assets/images/Artists/Taylor_Swift.jpg" width="100px" height="100px"/> -->
     </div>
-    <!-- <img src="../assets/images/homeimage.png" width="100%" alt="Welcome Banner"/> -->
-</div>
-
-<div class="content">
-    <div style="padding: 5%; background-color: blueviolet;">
-        <button onclick="document.getElementById('top_bands').style.display = 'block';">Top 10 Song Covers</button>
-    </div>
-    <div id="top_songs" class="topSongs" style="display: none;">
+    <div id="top_songCovers" class="topSongs" style="display: none;">
         <td>
         <img src="../assets/images/Artists/Ariana_Grande.jpg" width="100px" height="100px"/>
         </td>
@@ -59,23 +50,7 @@
         <img src="../assets/images/Artists/Drake.jpg" width="100px" height="100px"/>
         <img src="../assets/images/Artists/Ed_Sheeran.jpg" width="100px" height="100px" />
         <img src="../assets/images/Artists/Justin_Bieber.jpg" width="100px" height="100px"/>
-        <img src="../assets/images/Artists/Taylor_Swift.jpg" width="100px" height="100px"/>
+        <!-- <img src="../assets/images/Artists/Taylor_Swift.jpg" width="100px" height="100px"/> -->
     </div>
-    <!-- <img src="../assets/images/homeimage.png" width="100%" alt="Welcome Banner"/> -->
 </div>
 
-<!--<div class="profileMenu">
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon></mat-icon>
-        <span></span>
-    </button>
-    
-    <mat-menu  #menu="matMenu">
-        <button mat-menu-item routerLink = "/listUsers">
-            <span>List Users</span>
-        </button>
-        <button mat-menu-item routerLink = "/RegisterUser">
-            <span>RegisterUser</span>
-        </button>
-    </mat-menu>
-</div>-->

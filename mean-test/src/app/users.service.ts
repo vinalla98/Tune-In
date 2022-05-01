@@ -24,7 +24,7 @@ export class UsersService {
             .subscribe(() => {
                 console.log('Deleted: ' + userId);
             });
-            location.reload();
+            // location.reload();
     }
     updateUser(userId: string,firstName: string, lastName: string, email:  string, phoneNumber: string)
     {

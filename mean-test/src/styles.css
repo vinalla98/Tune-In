@@ -2,9 +2,9 @@
 
 body{
 background-image: url('/assets/images/background_image_home.png') !important;
-background-repeat: no-repeat !important;
-background-size: 100% 100% !important;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-size:     cover;                      
+background-repeat:   no-repeat;
+background-position: center center;   
 } 
 
 .content {

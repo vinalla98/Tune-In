@@ -4,7 +4,10 @@ const users = require('./models/users')
 const reviews = require('./models/reviews')
 const Subscription = require('./models/subscription')
 const product = require('./routes/music.route');
-mongoose.connect('mongodb://localhost:27017/Tune-In', { useNewUrlParser: true,  useUnifiedTopology: true })
+// mongoose.connect('mongodb://localhost:27017/Tune-In', { useNewUrlParser: true,  useUnifiedTopology: true })
+//     .then(() => { console.log("connected"); })
+//     .catch(() => { console.log("error connecting"); });
+    mongoose.connect('mongodb+srv://Tune-In:Z3tbstO9AfsITkJP@cluster0.ftjjy.mongodb.net/TuneIn?retryWrites=true&w=majority', { useNewUrlParser: true,  useUnifiedTopology: true })
     .then(() => { console.log("connected"); })
     .catch(() => { console.log("error connecting"); });
 

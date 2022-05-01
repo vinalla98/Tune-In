@@ -24,7 +24,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { SubscriptionPlanComponent } from './subscription-plan/subscription-plan.component';
 import { ListReviewsComponent } from './list-reviews/list-reviews.component';
 import {MusicplaylistService} from "../app/musicplaylist.service";
-import { GooglemapsapiComponent } from './googlemapsapi/googlemapsapi.component';
+import { ListuserreviewsComponent } from './listuserreviews/listuserreviews.component';
+import { AdminpageComponent } from './adminpage/adminpage.component';
 
 const appRoutes: Routes = [ {
   path: '',  //default component to display  
@@ -68,6 +69,15 @@ const appRoutes: Routes = [ {
   component: ProfileComponent 
 },
 {
+  path: 'listUserReviews',  
+  component: ListuserreviewsComponent 
+},
+{
+  path: 'adminPage',  
+  component: AdminpageComponent 
+},
+
+{
   path: '**',  
   component: NotFoundComponent
 }];
@@ -85,7 +95,8 @@ const appRoutes: Routes = [ {
     ProfileComponent,
     SubscriptionPlanComponent,
     ListReviewsComponent,
-    GooglemapsapiComponent,
+    ListuserreviewsComponent,
+    AdminpageComponent,
 
   ],
   imports: [

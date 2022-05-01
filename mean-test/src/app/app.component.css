@@ -38,3 +38,14 @@
   .dropdown:hover .dropbtn {
     
   }
+
+  
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
