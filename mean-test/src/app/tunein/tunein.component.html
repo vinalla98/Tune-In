@@ -1,11 +1,3 @@
-<script>
-    function showTopArtists(){
-        alert('hello world');
-        document.getElementsById('topArtists').show;
-        return false;
-    }
-</script>
-
 <div class="sideNavBar">
     <a href="/Open">Home</a>
     <a href="/playlists">Playlists</a>
@@ -13,44 +5,189 @@
     <a href="/reviews">Reviews</a>
 </div>
 
-<div class="content">
+<div class="homeLayout">
     <div>
-        <div><button onclick="document.getElementById('top_artists').style.display = 'block'; document.getElementById('top_bands').style.display = 'none'; document.getElementById('top_songCovers').style.display = 'none';">Featured Artists</button></div>
-        <div><button onclick="document.getElementById('top_bands').style.display = 'block'; document.getElementById('top_artists').style.display = 'none'; document.getElementById('top_songCovers').style.display = 'none';">Featured Bands</button></div>
-        <div><button onclick="document.getElementById('top_songCovers').style.display = 'block';document.getElementById('top_artists').style.display = 'none'; document.getElementById('top_bands').style.display = 'none';">Featured Song Covers</button></div>s
+        <button class="homeBtns" onclick="document.getElementById('top_artists').style.display = 'block'; document.getElementById('top_bands').style.display = 'none'; document.getElementById('top_songCovers').style.display = 'none';">Featured Artists</button>
+        <button class="homeBtns" onclick="document.getElementById('top_bands').style.display = 'block'; document.getElementById('top_artists').style.display = 'none'; document.getElementById('top_songCovers').style.display = 'none';">Featured Bands</button>
+        <button class="homeBtns" onclick="document.getElementById('top_songCovers').style.display = 'block';document.getElementById('top_artists').style.display = 'none'; document.getElementById('top_bands').style.display = 'none';">Featured Song Covers</button>
     </div>
-    <div id="top_artists" class="topArtists" style="display: none;">    
+    <div id="top_artists" class="topArtists">    
         <div>
-        <img src="../assets/images/Artists/Ariana_Grande.jpg" width="100px" height="100px"/>
-        <!-- <span>Hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</span> -->
+            <div style="float: left;"><img src="../assets/images/Artists/Ariana_Grande.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+            Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+            Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+            Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+            Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+            Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
         </div>
-        <img src="../assets/images/Artists/Bad_Bunny.jpg" width="100px" height="100px" />
-        <img src="../assets/images/Artists/Drake.jpg" width="100px" height="100px"/>
-        <img src="../assets/images/Artists/Ed_Sheeran.jpg" width="100px" height="100px" />
-        <img src="../assets/images/Artists/Justin_Bieber.jpg" width="100px" height="100px"/>
-        <img src="../assets/images/Artists/Taylor_Swift.jpg" width="100px" height="100px"/>
+        <div style="clear: both;">
+            <div style="float: left;"><img src="../assets/images/Artists/Bad_Bunny.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Artists/Drake.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Artists/Ed_Sheeran.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Artists/Justin_Bieber.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Artists/Taylor_Swift.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
     </div>
     <div id="top_bands" class="topBands" style="display: none;">
-        <td>
-        <img src="../assets/images/Bands/BTS.jpg" width="100px" height="100px" />
-        <img src="../assets/images/Bands/linkin_park.jpg" width="100px" height="100px" />
-        <img src="../assets/images/Bands/rolling_stones.jpg" width="100px" height="100px"/>
-        </td>
-        <img src="../assets/images/Bands/beatles.jpg" width="100px" height="100px" />
-        <img src="../assets/images/Bands/gunsnroses.jpg" width="100px" height="100px"/>
-        <img src="../assets/images/Bands/pink_floyd.jpg" width="100px" height="100px" />
-        <img src="../assets/images/Bands/coldplay.jpg" width="100px" height="100px"/> 
-        <!-- <img src="../assets/images/Artists/Taylor_Swift.jpg" width="100px" height="100px"/> -->
+        <div>
+            <div style="float: left;"><img src="../assets/images/Bands/BTS.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Bands/linkin_park.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Bands/rolling_stones.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Bands/beatles.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Bands/gunsnroses.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Bands/pink_floyd.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Bands/coldplay.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div> 
+        <!-- <div style="float: left;"><img src="../assets/images/Artists/Taylor_Swift.jpg" width="100px" height="100px"/></div> -->
     </div>
     <div id="top_songCovers" class="topSongs" style="display: none;">
-        <td>
-        <img src="../assets/images/Covers/whitney_houston.jpg" width="100px" height="100px"/>
-        </td>
-        <img src="../assets/images/Covers/sinead.jpg" width="100px" height="100px" />
-        <img src="../assets/images/Covers/arethra.jpg" width="100px" height="100px"/>
-        <img src="../assets/images/Covers/soft_cell.jpg" width="100px" height="100px" />
-        <img src="../assets/images/Covers/johnny.jpg" width="100px" height="100px"/>
-        <img src="../assets/images/Covers/Ike_turner.jpg" width="100px" height="100px"/> 
+        <div>
+            <div style="float: left;"><img src="../assets/images/Covers/whitney_houston.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Covers/sinead.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Covers/arethra.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Covers/soft_cell.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Covers/johnny.jpg" width="100px" height="100px"/></div>    
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div>
+        <div>
+            <div style="float: left;"><img src="../assets/images/Covers/Ike_turner.jpg" width="100px" height="100px"/></div>
+            <div style="margin-left: 12%;margin-top: 6%;">Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+                Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello</div>
+        </div> 
     </div>
 </div>
 
